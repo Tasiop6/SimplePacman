@@ -1,3 +1,5 @@
+package ce326.hw2;
+
 public class BoardCell {
     // Type of element in BoardCell
     public BoardElement[] elements;
@@ -5,13 +7,12 @@ public class BoardCell {
     // Control for '-', so we don't lose them on overlap
     public boolean hasVisited;
 
-    public BoardCell(BoardElement elements) {
-        this.elements = new BoardElement[1];
-        this.elements[0] = elements;
-
+    public BoardCell() {
     }
 
-    public BoardCell() {
+
+    public void setElements(BoardElement[] elements) {
+        this.elements = elements;
     }
 
     // Get Element
@@ -22,19 +23,13 @@ public class BoardCell {
         return elements[0];
     }
 
-    // Add element in empty space of BoardCell.
-    public void setElement (BoardElement elements) {
-        if (this.elements[0] == null) {
-            this.elements[0] = elements;
-            return;
-        }
-        this.elements[1] = elements;
-    }
+
     // Check if X has visited
     public boolean getHasVisited() {
         return hasVisited;
     }
 
+    // Change hasVisited
     public void setHasVisited(boolean hasVisited) {
         this.hasVisited = hasVisited;
     }
