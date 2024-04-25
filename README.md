@@ -5,7 +5,7 @@ At the start:
 - Load Game      (L/l) : Loads new game from files(JSON)
 - Quit           (Q/q) : Quit game
 
-When we load a game we are asked to give the next move of the player. After theghosts move we continue with the player moves until we press "Z" or "z" to pause 
+When we load a game we are asked to give the next move of the player. After the ghosts move we continue with the player moves until we press "Z" or "z" to pause 
 the game and show the menu.
 
 The main menu of the program is provided below
